@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <title>React Container Components</title>
+
+    <title>New York Times API Container Lab</title>
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="node_modules/mocha/mocha.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
   </head>
+
   <body>
-    <main id="main">
-    </main>
-    <!-- Open this file and call `mocha.run()` in console to run tests -->
+
+    <main id="main" class="container"></main>
     <div id="mocha"></div>
+
     <script src="node_modules/mocha/mocha.js"></script>
     <script src="node_modules/expect/umd/expect.min.js"></script>
-    <script>mocha.setup('bdd');</script>
-
+    <script>mocha.setup('bdd')</script>
     <script src="bundle.js"></script>
+
   </body>
+  
 </html>
