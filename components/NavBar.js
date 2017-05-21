@@ -2,9 +2,9 @@ import React from 'react'
 
 function NavBar() {
   return (
-    <nav>
+    <nav className="row">
       <div className="nav-wrapper blue accent-4">
-        <a href="#" className="brand-logo center ">The Latest Reviews</a>
+        <a href="#" className="brand-logo center ">Search for a New York Times Article</a>
       </div>
     </nav>
   )

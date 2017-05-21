@@ -22,7 +22,6 @@ ReactDOM.render(
     <div>
       <LatestMovieReviewsContainer />
     </div>
-
   </div>,
   document.getElementById('main')
 )

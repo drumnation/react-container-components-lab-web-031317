@@ -20,16 +20,19 @@ class SearchableMovieReviewsContainer extends Component {
 
   render() {
     return (
-      <div className="searchable-movie-reviews">
-        <h4 className="text-align-center">Search for a New York Times Article</h4>
-        <form onSubmit={ this.handleSubmit.bind(this) }>
-          <div className="input-field text-align-center">
-            <input type="text" value={ this.state.query } onChange={ this.handleSearch.bind(this) }/>
-          </div>
-          <button type="submit" className="waves-effect waves-light btn green accent-4 center">Search</button>
-        </form>
-        <MovieReviews reviews={ this.state.reviews }/>
-      </div>
+      <div>
+        <div className="card-panel hoverable searchable-movie-reviews row" style={{ marginBottom: 50 + 'px' }}>
+          <form onSubmit={ this.handleSubmit.bind(this) }>
+            <div className="input-field">
+              <input className="center-align" type="text" value={ this.state.query } onChange={ this.handleSearch.bind(this) }/>
+            </div>
+            <button type="submit" className="col s10 offset-s1 center-align waves-effect waves-light btn green accent-4 center">Search</button>
+          </form>
+        </div>
+        <div>
+          <MovieReviews reviews={ this.state.reviews }/>
+        </div>
+    </div>
     )
   }
 }
